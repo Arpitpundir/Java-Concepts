@@ -60,5 +60,17 @@ public class Main {
         GenericClass<String> message = new GenericClass<>();
         message.setMessage("Yahallo");
         System.out.println(message.getMessage());
+
+        /**
+         * Generic Method
+         */
+
+        GenericClass<String>.Pair<String, String> pair1 = message.new Pair<String, String>("key1", "value1");
+        GenericClass<String>.Pair<String, String> pair2 = message.new Pair<String, String>("key2", "value1");
+
+        message.isKeyEqual(pair1, pair2);
+        message.isValueEqual(pair1, pair2);
+
+
     }
 }

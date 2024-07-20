@@ -9,7 +9,7 @@ public class GenericClass<T> {
     public class Pair<K,V> {
         private K key;
         private V value;
-        Pair(K key, V value){
+        public Pair(K key, V value){
             this.key = key;
             this.value = value;
         }
@@ -27,11 +27,11 @@ public class GenericClass<T> {
         return this.message;
     }
 
-    public <U, V> boolean isKeyEqual(Pair<U, V> par1, Pair<U, V>  par2){
-        return par1.getKey() == par2.getKey();
-    }
+    public <U, V> void isKeyEqual(Pair<U, V> par1, Pair<U, V>  par2){
+        System.out.println(par1.getKey() == par2.getKey());
+    };
 
-    public <U, V> boolean isValueEqual(Pair<U, V> pair1, Pair<U, V> pair2){
-        return pair1.getValue() == pair2.getValue();
-    }
+    public <U, V> void isValueEqual(Pair<U, V> pair1, Pair<U, V> pair2){
+        System.out.println(pair1.getValue() == pair2.getValue());
+    };
 }
