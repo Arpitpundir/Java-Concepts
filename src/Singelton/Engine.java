@@ -7,5 +7,6 @@ public class Engine {
     public static void runEngine(){
         System.out.println(EagerInitialization.getDbInstance());
         System.out.println(LazyInitialization.getDbInstance());
+        System.out.println(Synchronized.getDbInstance());
     }
 }
