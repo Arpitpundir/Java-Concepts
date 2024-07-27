@@ -10,5 +10,4 @@ public class Synchronized {
         }
         return dbInstance;
     }
-
 }
