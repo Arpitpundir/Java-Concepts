@@ -34,4 +34,15 @@ public class GenericClass<T> {
     public <U, V> void isValueEqual(Pair<U, V> pair1, Pair<U, V> pair2){
         System.out.println(pair1.getValue() == pair2.getValue());
     };
+
+    public static class UpperBoundedGenericClass<T extends Number>{
+        private T num1;
+        public UpperBoundedGenericClass(T value) {
+            this.num1 = value;
+        }
+
+        public T getNum1() {
+            return this.num1;
+        }
+    }
 }

@@ -2,15 +2,13 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 
-import JavaClass.GenericClass;
-import JavaClass.LocalNestedClass;
+import JavaClass.*;
 import JavaMethods.privateMethodDemo;
 import JavaMethods.protectedMethodDemo;
 import JavaMethods.publicMethodDemo;
 import JavaMethods.staticMethodDemo;
 import utils.adhoc;
-import JavaClass.constructorsDemo;
-import JavaClass.NestedStaticClass;
+
 public class Main {
 
     public static void main(String[] args){
@@ -71,6 +69,27 @@ public class Main {
         message.isKeyEqual(pair1, pair2);
         message.isValueEqual(pair1, pair2);
 
+        /**
+         * Upper Bounded Generic
+         */
 
+        GenericClass.UpperBoundedGenericClass<Double> example1 = new GenericClass.UpperBoundedGenericClass<>(43.0);
+        System.out.println(example1.getNum1());
+
+        /**
+         * Enum Class
+         */
+
+        // Traversing enum values
+//        for(EnumExample example: EnumExample.values()){
+//            System.out.println(example.ordinal());
+//        }
+//
+//        EnumExample enumVariable = EnumExample.valueOf("FRIDAY");
+//        System.out.println(enumVariable.ordinal());
+//        System.out.println(enumVariable.name());
+
+        EnumExample example2 = EnumExample.getEnumFromValue(6);
+        System.out.println(example2.getValue());
     }
 }
