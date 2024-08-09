@@ -21,4 +21,8 @@ public class OperateBMW implements OperateCar{
     public int useDefaultMethod(){
         return this.deaultMethod();
     }
+
+    public String useInterfaceStaticMethod(){
+        return OperateCar.interfaceStaticMethod();
+    }
 }
