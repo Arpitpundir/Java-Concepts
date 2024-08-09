@@ -2,6 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 
+import Interface.InterfaceEngine;
 import JavaClass.*;
 import JavaMethods.privateMethodDemo;
 import JavaMethods.protectedMethodDemo;
@@ -91,5 +92,12 @@ public class Main {
 
         EnumExample example2 = EnumExample.getEnumFromValue(6);
         System.out.println(example2.getValue());
+
+        /**
+         * Interface
+         */
+
+        InterfaceEngine interfaceExamples = new InterfaceEngine();
+
     }
 }
