@@ -4,10 +4,7 @@
 
 import Interface.InterfaceEngine;
 import JavaClass.*;
-import JavaMethods.privateMethodDemo;
-import JavaMethods.protectedMethodDemo;
-import JavaMethods.publicMethodDemo;
-import JavaMethods.staticMethodDemo;
+import JavaMethods.*;
 import utils.adhoc;
 
 public class Main {
@@ -38,6 +35,8 @@ public class Main {
             Static Method
          */
          System.out.println(staticMethodDemo.sum(10,20));
+
+        MethodEngine.run();
 
          /*
          Nested Java Class
