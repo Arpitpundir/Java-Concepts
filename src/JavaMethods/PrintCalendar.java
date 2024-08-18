@@ -8,7 +8,7 @@ public class PrintCalendar {
         System.out.println("Enter full year: ");
         int year = input.nextInt();
 
-        System.out.println("Enter year: ");
+        System.out.println("Enter Month: ");
         int month =  input.nextInt();
 
         printMonth(year, month);
@@ -21,7 +21,7 @@ public class PrintCalendar {
 
     private static void printMonthTitle(int year, int month){
         System.out.println("     " + getMonthName(month) + " " + year);
-        System.out.println("-------------------");
+        System.out.println("-----------------------------");
         System.out.println(" Sun Mon Tue Wed Thu Fri Sat");
     }
 
@@ -57,7 +57,7 @@ public class PrintCalendar {
 
         for(int i = 1; i <= numberOfDaysInMonth; i++){
             System.out.printf("%4d", i);
-            if((i + startDay - 1) % 7 == 0){
+            if((i + startDay) % 7 == 0){
                 System.out.println();
             }
         }
