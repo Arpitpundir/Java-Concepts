@@ -2,6 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 
+import Array.ArrayEngine;
 import Interface.InterfaceEngine;
 import JavaClass.*;
 import JavaMethods.*;
@@ -36,7 +37,7 @@ public class Main {
          */
          System.out.println(staticMethodDemo.sum(10,20));
 
-        MethodEngine.run();
+//        MethodEngine.run();
 
          /*
          Nested Java Class
@@ -98,5 +99,10 @@ public class Main {
 
         InterfaceEngine interfaceExamples = new InterfaceEngine();
 
+        /**
+         * Array examples
+         */
+
+        ArrayEngine.run();
     }
 }
